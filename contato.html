@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="pacotes.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+   
+          </ul>
+        </nav>
+        <div class="logo">
+          <a href="#"><h1><span>DY</span>NAMIC</h1></a>
+        </div>
+        
+        </header>
+<section id="contact">
+
+    <form id="form">
+      <h1>ENTRAR EM CONTATO</h1>
+      
+         <input type="text" placeholder="nome" class="inputs required" oninput="nameValidate">
+      
+         <input type="email" placeholder="e-mail" class="inputs required">
+    
+         <input type="number" placeholder="telefone"  class="inputs required">
+
+      
+      <textarea placeholder="mensagem" cols="30" rows="10" class="inputs "></textarea>
+      <input type="submit" value="enviar">
+    </form>
+
+  </section>
+
+  <section id="footer">
+
+    <div class="footer-container">
+  
+      <div class="brand">
+        <div class="logo">
+          <a href="#"><h1><span>DY</span>NAMIC</h1></a>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com/opablao/" class="fab fa-instagram" data-text="instagram"></a>
+
+        </div>
+      </div>
+  
+      <div class="contact-info">
+        <div class="info">
+          <a href="#" class="fas fa-map-marker-alt" data-text="av. das américas 1124"></a>
+          <a href="#" class="fas fa-envelope" data-text="dynamicfitclub@gmail.com"></a>
+          <a href="#" class="fas fa-phone" data-text="96441-9897"></a>
+        </div>
+      </div>
+  
+      <div class="letter">
+        <h1>novidades</h1>
+        <p>se inscreva para ficar por dentro das novidades</p>
+        <input type="email" placeholder="e-mail">
+        <input type="submit" placeholder="inscreva-se">
+      </div>
+  
+    </div>
+  </section>
+  
+  <script>
+		const form = document.querySelector('form');
+
+		form.addEventListener('submit', function(event) {
+			event.preventDefault(); 
+
+			const nome = document.querySelector('#nome').value;
+			const email = document.querySelector('#email').value;
+			const number = document.querySelector('#telefone').value;
+
+			console.log(`Nome: ${nome}`);
+			console.log(`Email: ${email}`);
+			console.log(`Telefone: ${telefone}`);
+
+			document.querySelector('#nome').value = '';
+			document.querySelector('#email').value = '';
+			document.querySelector('#telefone').value = '';
+		});
+	</script>
+  </script>
+
+</body>
+</html>
